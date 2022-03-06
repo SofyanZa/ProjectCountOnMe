@@ -273,7 +273,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ps4-u9-KKI"/>
-                        <color key="backgroundColor" red="0.024083302856603921" green="0.21013762011243015" blue="0.21196706427468193" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.28369909889843359" green="0.33201152146464652" blue="0.28119152143547876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ps4-u9-KKI" firstAttribute="trailing" secondItem="jdu-S2-dLL" secondAttribute="trailing" constant="20" id="75Y-N5-4uq"/>
                             <constraint firstItem="ps4-u9-KKI" firstAttribute="trailing" secondItem="2en-al-1BH" secondAttribute="trailing" constant="20" id="J14-F0-GEg"/>
