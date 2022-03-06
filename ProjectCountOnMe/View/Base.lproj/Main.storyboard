@@ -4,20 +4,21 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="8R7-7N-z3c">
             <objects>
-                <viewController id="gb0-YA-gX0" customClass="ViewController" customModule="CountOnMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gb0-YA-gX0" customClass="ViewController" customModule="ProjectCountOnMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1qO-dG-Dx9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="2en-al-1BH">
                                 <rect key="frame" x="20" y="64" width="374" height="374"/>
-                                <color key="backgroundColor" red="0.099517919120000006" green="0.48498469589999998" blue="0.53726595639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.44705885649999999" green="0.64705884459999996" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -72,7 +73,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGC-YG-UdE">
                                                 <rect key="frame" x="294" y="0.0" width="80" height="80"/>
-                                                <color key="backgroundColor" red="0.085007853810000006" green="0.3964612186" blue="0.3725497425" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.61574974264761417" green="0.20143593589361131" blue="0.16102484594961172" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="EGC-YG-UdE" secondAttribute="height" multiplier="1:1" id="aKt-Yq-YED"/>
                                                 </constraints>
@@ -133,7 +134,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-WF-M6P">
                                                 <rect key="frame" x="294" y="0.0" width="80" height="80"/>
-                                                <color key="backgroundColor" red="0.085007853810000006" green="0.3964612186" blue="0.3725497425" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.47843140360000003" green="0.70980393890000004" blue="0.78431367870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Dln-WF-M6P" secondAttribute="height" multiplier="1:1" id="Ii3-Wm-XuU"/>
                                                 </constraints>
@@ -194,7 +195,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5K-db-Kik">
                                                 <rect key="frame" x="294" y="0.0" width="80" height="80"/>
-                                                <color key="backgroundColor" red="0.085007853810000006" green="0.3964612186" blue="0.3725497425" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.47450977560000002" green="0.72941178080000002" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="S5K-db-Kik" secondAttribute="height" multiplier="1:1" id="gVn-d7-4Gs"/>
                                                 </constraints>
@@ -227,7 +228,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ts2-WS-5Xt">
                                                 <rect key="frame" x="98" y="0.0" width="80" height="80"/>
-                                                <color key="backgroundColor" red="0.2259001434" green="0.73018950220000001" blue="0.41563391690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Ts2-WS-5Xt" secondAttribute="height" multiplier="1:1" id="Lhd-pL-1X5"/>
                                                 </constraints>
@@ -255,7 +256,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fh-z5-iUb">
                                                 <rect key="frame" x="294" y="0.0" width="80" height="80"/>
-                                                <color key="backgroundColor" red="0.085007853810000006" green="0.3964612186" blue="0.3725497425" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.47450977560000002" green="0.72941178080000002" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9fh-z5-iUb" secondAttribute="height" multiplier="1:1" id="rvp-dz-F2Q"/>
                                                 </constraints>
@@ -273,7 +274,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ps4-u9-KKI"/>
-                        <color key="backgroundColor" red="0.28369909889843359" green="0.33201152146464652" blue="0.28119152143547876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.11120975378787878" green="0.11120975378787878" blue="0.11120975378787878" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ps4-u9-KKI" firstAttribute="trailing" secondItem="jdu-S2-dLL" secondAttribute="trailing" constant="20" id="75Y-N5-4uq"/>
                             <constraint firstItem="ps4-u9-KKI" firstAttribute="trailing" secondItem="2en-al-1BH" secondAttribute="trailing" constant="20" id="J14-F0-GEg"/>
@@ -303,4 +304,9 @@
             <point key="canvasLocation" x="39" y="171"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
