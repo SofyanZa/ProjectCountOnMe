@@ -14,8 +14,6 @@
 		D1896C5727D574140039E9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1896C5627D574140039E9E1 /* Assets.xcassets */; };
 		D1896C5A27D574140039E9E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1896C5827D574140039E9E1 /* LaunchScreen.storyboard */; };
 		D1896C6527D574140039E9E1 /* ProjectCountOnMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1896C6427D574140039E9E1 /* ProjectCountOnMeTests.swift */; };
-		D1896C6F27D574140039E9E1 /* ProjectCountOnMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1896C6E27D574140039E9E1 /* ProjectCountOnMeUITests.swift */; };
-		D1896C7127D574140039E9E1 /* ProjectCountOnMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1896C7027D574140039E9E1 /* ProjectCountOnMeUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +45,6 @@
 		D1896C6027D574140039E9E1 /* ProjectCountOnMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectCountOnMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1896C6427D574140039E9E1 /* ProjectCountOnMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCountOnMeTests.swift; sourceTree = "<group>"; };
 		D1896C6A27D574140039E9E1 /* ProjectCountOnMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectCountOnMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1896C6E27D574140039E9E1 /* ProjectCountOnMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCountOnMeUITests.swift; sourceTree = "<group>"; };
-		D1896C7027D574140039E9E1 /* ProjectCountOnMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCountOnMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +77,6 @@
 			children = (
 				D1896C4C27D574130039E9E1 /* ProjectCountOnMe */,
 				D1896C6327D574140039E9E1 /* ProjectCountOnMeTests */,
-				D1896C6D27D574140039E9E1 /* ProjectCountOnMeUITests */,
 				D1896C4B27D574130039E9E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,12 +94,10 @@
 		D1896C4C27D574130039E9E1 /* ProjectCountOnMe */ = {
 			isa = PBXGroup;
 			children = (
-				D1896C4D27D574130039E9E1 /* AppDelegate.swift */,
-				D1896C4F27D574130039E9E1 /* SceneDelegate.swift */,
-				D1896C5127D574130039E9E1 /* ViewController.swift */,
-				D1896C5327D574130039E9E1 /* Main.storyboard */,
-				D1896C5627D574140039E9E1 /* Assets.xcassets */,
-				D1896C5827D574140039E9E1 /* LaunchScreen.storyboard */,
+				D1896C7D27D5757D0039E9E1 /* Model */,
+				D1896C7E27D575880039E9E1 /* View */,
+				D1896C7F27D575930039E9E1 /* Controller */,
+				D1896C8027D575AC0039E9E1 /* Supporting Files */,
 				D1896C5B27D574140039E9E1 /* Info.plist */,
 			);
 			path = ProjectCountOnMe;
@@ -118,13 +111,38 @@
 			path = ProjectCountOnMeTests;
 			sourceTree = "<group>";
 		};
-		D1896C6D27D574140039E9E1 /* ProjectCountOnMeUITests */ = {
+		D1896C7D27D5757D0039E9E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D1896C6E27D574140039E9E1 /* ProjectCountOnMeUITests.swift */,
-				D1896C7027D574140039E9E1 /* ProjectCountOnMeUITestsLaunchTests.swift */,
 			);
-			path = ProjectCountOnMeUITests;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1896C7E27D575880039E9E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1896C5327D574130039E9E1 /* Main.storyboard */,
+				D1896C5827D574140039E9E1 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1896C7F27D575930039E9E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1896C5127D574130039E9E1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1896C8027D575AC0039E9E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1896C4F27D574130039E9E1 /* SceneDelegate.swift */,
+				D1896C4D27D574130039E9E1 /* AppDelegate.swift */,
+				D1896C5627D574140039E9E1 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +294,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1896C6F27D574140039E9E1 /* ProjectCountOnMeUITests.swift in Sources */,
-				D1896C7127D574140039E9E1 /* ProjectCountOnMeUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
