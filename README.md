@@ -1,7 +1,8 @@
 # ProjectCountOnMe
 Calculatrice en swift
 
-![Simulator Screen Shot - iPhone 11 - 2022-03-07 at 10 57 46](https://user-images.githubusercontent.com/48012094/157009084-05efc7fa-3e1c-4453-b77d-faf0cb799b53.png)
+<img width="302" alt="Capture d’écran 2022-03-07 à 11 04 50" src="https://user-images.githubusercontent.com/48012094/157010497-578b1b00-bf2f-4d51-9758-578e4ecdf156.png">
+
 
 ## Compétences évaluée
 
