@@ -13,19 +13,19 @@ import UIKit
 class ViewController: UIViewController {
     
 
-    //MARK: PROPERTIES
+    // MARK: PROPERTIES
     
     let calculator = Calculator()
     
     
-    //MARK:- OUTLETS connect the View and the Controller
+    // MARK: - OUTLETS connect the View and the Controller
     
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet var numberButtons: [UIButton]!
     
     
-    //MARK:- ACTIONS connect between the View and The methods of Controller
+    // MARK: - ACTIONS connect between the View and The methods of Controller
     
     
     @IBAction func tappedNumberButton(_ sender: UIButton) {
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     }
     
     
-    //MARK:- VIEW LIFE CYCLES
+    // MARK: - VIEW LIFE CYCLES
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     }
     
     
-    //MARK:- METHODS
+    // MARK: - METHODS
     
     
     func alertMessage(message: String) -> Void {

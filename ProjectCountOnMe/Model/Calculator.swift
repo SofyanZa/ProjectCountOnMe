@@ -27,19 +27,19 @@ final class Calculator {
     // MARK: - Properties
     
     
-    //Cette variable permet d'afficher dans le textView de la View
+    // Cette variable permet d'afficher dans le textView de la View
     var calculString: String {
         didSet {
             calculText?(calculString)
         }
     }
     
-    //var elements pour creer les nombres
+    // var elements pour creer les nombres
     private var elements: [String] {
         return calculString.split(separator: " ").map { "\($0)" }
     }
     
-    //Les lignes (43, 47, 51 et 55) permettent de vérifier le calcul
+    // Ces variables permettent de verifier le calcul
     var expressionIsCorrect: Bool {
         return elements.last != "+" && elements.last != "-" && elements.last != "x" && elements.last != "÷"
     }
@@ -56,18 +56,17 @@ final class Calculator {
         return calculString.firstIndex(of: "=") != nil
     }
     
-    //var isDivideByZero est false
+    // var isDivideByZero est false
     var isDivideByZero: Bool {
         return calculString.contains("÷ 0")
-
     }
     
-    //Pour commencer avec le nombre
+    // Permet de commencer avec un nombre
     var isPossibleToStartWithNumber : Bool {
         if calculString >= "0" && calculString <= "9"{
             return elements.count >= 1 }
         else {
-            alertMessage?("Vous ne pouvez pas commencez par un opérateur !")
+            alertMessage?("Vous ne pouvez pas commencer par un opérateur !")
         }
         return false
     }
@@ -77,7 +76,7 @@ final class Calculator {
     //MARK:- METHODS
     
     
-    //func addNumbers qui vérifie si l'on peut ajouter un nombre
+    // func addNumbers qui vérifie si l'on peut ajouter un nombre
     func addNumbers(numbers: String) {
         if expressionHaveResult {
             calculString = ""
@@ -85,7 +84,7 @@ final class Calculator {
         calculString.append(numbers)
     }
     
-    //func addOperator qui vérifie si l'on peut ajouter un opérateur
+    // func addOperator qui vérifie si l'on peut ajouter un opérateur
     func addOperator(with mathOperator: String) {
         if isPossibleToStartWithNumber {
             if canAddOperator {
@@ -96,16 +95,17 @@ final class Calculator {
         }
     }
     
-    //func addAC permet de remettre à 0
+    // func addAC permet de remettre à 0
     func addAC() {
         calculString.removeAll()
         calculText?("0")
     }
     
     
-    //func addEqual qui effectue le calcul final avec l'expression, si tous les conditions sont remplies
+    // func addEqual qui effectue le calcul final avec l'expression, si tous les conditions sont remplies
     func addEqual() {
         
+        // guard data existe dans tout le scope de la fonction
         guard expressionIsCorrect else {
             alertMessage?("Entrez une expression correcte !")
             return
@@ -122,7 +122,7 @@ final class Calculator {
             return
         }
         
-        // Create local copy of operations
+        // Création d'une copie locale des opérations
         var operationsToReduce = elements
         
         while operationsToReduce.count > 1 {
@@ -133,10 +133,10 @@ final class Calculator {
             
             let result: Double
                 
-                // Start at one or we can't assign index to (index - 1)
+                // Commencer à un ou nous ne pouvons pas attribuer d'index à (index - 1)
                 var operandIndex = 1
                 
-                //Rechercher s'il y a plusieurs signes de division puis attribuer un index
+                // Recherche s'il y a plusieurs signes de division puis attribuer un index
                 if let index = operationsToReduce.firstIndex(where: { $0 == "x" || $0 == "÷" }) {
                     
                     operandIndex = index
@@ -148,20 +148,21 @@ final class Calculator {
                 result = calculate(left: Double(left), right: Double(right), operand: operand)
                 
             
-                //Boucle à l'intérieur de l'index pour supprimer l'opérateur supplémentaire
+                // Boucle à l'intérieur de l'index pour supprimer l'opérateur supplémentaire
                 for _ in 1...3 {
                     
                     operationsToReduce.remove(at: operandIndex - 1)
-                    print("Nous avons supprimé :\(operationsToReduce)")
+                    print("Je supprime :\(operationsToReduce)")
                 }
             
                 operationsToReduce.insert(formatResult(result: Double(result)), at: operandIndex - 1 )
-                print("Votre resultat :\(result)")
-                print("Le resultat formater :\(operationsToReduce)")
+                print("Resultat :\(result)")
+                print("Le resultat apres formatResult :\(operationsToReduce)")
                 
             }
             guard let finalResult = operationsToReduce.first else { return }
             calculString.append(" = \(finalResult)")
+            print("Le resultat de finalResult :\(finalResult)")
     }
     
     
@@ -181,13 +182,13 @@ final class Calculator {
            return result
        }
     
-    //func formatResult permet de gérer les nombres décimaux
+    // func formatResult permet de gérer les nombres décimaux
      private func formatResult(result: Double) -> String {
           let formatter = NumberFormatter()
           formatter.maximumFractionDigits = 3
           guard let resultFormated = formatter.string(from: NSNumber(value: result)) else { return String() }
           
-        //Sinon on met la puissance pour des grands nombres aux petits nombres
+        // Sinon on met la puissance pour des grands nombres aux petits nombres
           guard resultFormated.count <= 10 else {
               return String(result)
           }

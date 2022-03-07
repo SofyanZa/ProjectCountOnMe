@@ -11,7 +11,7 @@ class CalculatorTest: XCTestCase {
 
     var calculator: Calculator!
 
-    //Methode setUp permet de faire une initialisation
+    // Methode setUp permet de faire une initialisation
     override func setUp() {
         super.setUp()
         calculator = Calculator()
@@ -35,7 +35,6 @@ class CalculatorTest: XCTestCase {
     }
 
     
-    //Checking expression is correct: 2 + 2 = 4
     func testGivenExpressionIsCorrect_WhenStringGreaterThanOrEqualTo3_ThenReturnTrue() {
         calculator.addNumbers(numbers: "2")
         calculator.addOperator(with: "+")
@@ -56,7 +55,7 @@ class CalculatorTest: XCTestCase {
         calculator.addOperator(with: "x")
         calculator.addOperator(with: "+")
         
-        //Error: Vous ne pouvez pas commencez par un opérateur !
+        // Error: Vous ne pouvez pas commencez par un opérateur !
         XCTAssertEqual(calculator.calculString, "")
     }
     
@@ -66,7 +65,7 @@ class CalculatorTest: XCTestCase {
         calculator.addNumbers(numbers: "0")
         calculator.addEqual()
         
-        //Error: Impossible de diviser par 0
+        // Error: Impossible de diviser par 0
         XCTAssertEqual(calculator.calculString, "")
     }
     

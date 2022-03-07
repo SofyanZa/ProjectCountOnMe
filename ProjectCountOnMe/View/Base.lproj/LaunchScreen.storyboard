@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Jx-5w-R5c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,31 +8,41 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="s95-9z-Rt5">
+        <scene sceneID="jF4-ns-5js">
             <objects>
-                <viewController id="1Jx-5w-R5c" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KGj-zo-I04">
+                <viewController id="Cpc-bC-hm9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wNx-Mm-n81">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CountOnMe" translatesAutoresizingMaskIntoConstraints="NO" id="HOL-51-YwV">
-                                <rect key="frame" x="50.5" y="413.5" width="313" height="69"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CountOnMe" translatesAutoresizingMaskIntoConstraints="NO" id="C6L-MK-BB9">
+                                <rect key="frame" x="50.5" y="89" width="313" height="69"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="8Hr-lJ-Tw5" userLabel="LogoCountOnMe">
+                                <rect key="frame" x="50" y="284" width="314" height="328"/>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Qty-2u-1Kl"/>
-                        <color key="backgroundColor" red="0.099517919120000006" green="0.48498469589999998" blue="0.53726595639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="4gC-el-w3N"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="HOL-51-YwV" firstAttribute="centerX" secondItem="KGj-zo-I04" secondAttribute="centerX" id="Ae4-mD-hvc"/>
-                            <constraint firstItem="HOL-51-YwV" firstAttribute="centerY" secondItem="KGj-zo-I04" secondAttribute="centerY" id="QU0-Sr-I3G"/>
+                            <constraint firstItem="4gC-el-w3N" firstAttribute="trailing" secondItem="C6L-MK-BB9" secondAttribute="trailing" constant="50.5" id="1cv-fD-e5c"/>
+                            <constraint firstItem="8Hr-lJ-Tw5" firstAttribute="centerY" secondItem="wNx-Mm-n81" secondAttribute="centerY" id="7MG-Sl-Yv2"/>
+                            <constraint firstItem="C6L-MK-BB9" firstAttribute="top" secondItem="4gC-el-w3N" secondAttribute="top" constant="45" id="CQ9-wn-PTK"/>
+                            <constraint firstItem="C6L-MK-BB9" firstAttribute="leading" secondItem="4gC-el-w3N" secondAttribute="leading" constant="50.5" id="HzU-rO-2oK"/>
+                            <constraint firstItem="8Hr-lJ-Tw5" firstAttribute="leading" secondItem="4gC-el-w3N" secondAttribute="leading" constant="50" id="SAt-P8-3jC"/>
+                            <constraint firstItem="4gC-el-w3N" firstAttribute="bottom" secondItem="8Hr-lJ-Tw5" secondAttribute="bottom" constant="250" id="ZoM-Er-hGw"/>
+                            <constraint firstItem="8Hr-lJ-Tw5" firstAttribute="centerY" secondItem="wNx-Mm-n81" secondAttribute="centerY" id="cLa-Dc-58S"/>
+                            <constraint firstItem="8Hr-lJ-Tw5" firstAttribute="centerX" secondItem="C6L-MK-BB9" secondAttribute="centerX" id="ql1-7Y-qg1"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R3r-L8-peE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ClS-tU-dV9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
         <image name="CountOnMe" width="313" height="69"/>
+        <image name="Logo" width="512" height="512"/>
     </resources>
 </document>
